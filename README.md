@@ -19,3 +19,25 @@ Express.js
 HTML/CSS/JS (basic frontend)
 
 Optionally: Socket.io for live updates
+
+🔧 How It Works
+
+Staff updates the current queue number.
+
+An event is emitted.
+
+All connected users receive the update instantly.
+
+The UI highlights: “You're next!” or “2 people ahead”.
+
+
+🚀 Getting Started
+1. Clone the repo
+    git clone https://github.com/yourusername/smartqueue.git
+2. Install dependencies
+    cd smartqueue
+    npm install
+3. Run the server
+    node server/index.js
+
+
