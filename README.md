@@ -1,3 +1,8 @@
+SmartQueue 🚦
+
+A simple event-driven queue notification system designed to help users avoid long waiting times in offices such as hospitals, banks, and university service desks.
+
+SmartQueue listens for queue number updates and instantly notifies users when their turn is near.
 📌 Features
 
 🔔 Real-time event notifications when queue number changes
@@ -33,7 +38,7 @@ The UI highlights: “You're next!” or “2 people ahead”.
 
 🚀 Getting Started
 1. Clone the repo
-    git clone https://github.com/yourusername/smartqueue.git
+    git clone https://github.com/veydaszn/smartqueue.git
 2. Install dependencies
     cd smartqueue
     npm install
