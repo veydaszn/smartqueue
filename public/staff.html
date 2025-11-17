@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SmartQueue Staff Panel</title>
+</head>
+<body>
+<h2>Staff Queue Control</h2>
+<input type="number" id="queueInput" placeholder="Enter queue number">
+<button onclick="updateQueue()">Update</button>
+
+
+<script>
+function updateQueue() {
+const number = document.getElementById('queueInput').value;
+fetch('/queue/update', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({ number })
+});
+}
+</script>
+</body>
+</html>
