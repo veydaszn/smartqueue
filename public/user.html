@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SmartQueue User View</title>
+</head>
+<body>
+<h2>Current Queue Number:</h2>
+<h1 id="current">Loading...</h1>
+
+
+<script>
+async function getQueue() {
+const res = await fetch('/queue');
+const data = await res.json();
+document.getElementById('current').textContent = data.current;
+}
+
+
+setInterval(getQueue, 2000); // Poll every 2s
+getQueue();
+</script>
+</body>
+</html>
